@@ -5,4 +5,4 @@
 
 
 Ben Ümmügülsüm Söğüt,19 yaşındayım İstanbul'da yaşıyorum.Borsa İstanbul Ispartakule Anadolu Lisesi mezunuyum,
-Gelişim Üniversitesi Ön Yüz Yazılım bölümünde öğrenim görmekteyim.
+Gelişim Üniversitesi Ön Yüz Yazılım bölümünde okumaktayım.
