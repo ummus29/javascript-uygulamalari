@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>not alıştırma</title>
+  </head>
+  <body>
+    <h3><b>Not Alanı</b></h3>
+    <p>Kayıtlı Not Alanı: <span id="not-gosterge"></span></p>
+    <button id="kaydet-btn">Kaydet</button>
+    <button id="sil-btn">Sil</button>
+  </body>
+</html>
+<script>
+  const notGosterge = document.getElementById("not-gosterge");
+  const kaydetBtn = document.getElementById("kaydet-btn");
+  const silBtn = document.getElementById("sil-btn");
+  /*depolama Alanı*/
+  const NOT_KEY = "hizlinotum";
+  const Kaydedilecek_Metin = "Bugün localStorge öğrendim";
+
+  function durumugoster() {
+    const kayıtlıNot = localStorage.getItem(NOT_KEY);
+    if (kayıtlınot) {
+      notGosterge.style.color = "green";
+    } else {
+      notGosterge.textContent = "Henüz kayıtlı bir not yok ";
+      notGosterge.style.color = "red";
+    }
+  }
+  kaydetBtn.addEventListener("click", () => {
+    localStorage.setItem(NOT_KEY, Kaydedilecek_Metin);
+    durumugoster();
+    console.log("Not Kaydedildi. " + Kaydedilecek_Metin);
+  });
+  silBtn.addEventListener("click", () => {
+    localStorage.removeItem(NOT_KEY);
+    durumugoster();
+    xonsole.log("Not silindi");
+  });
+  durumugoster();
+</script>
